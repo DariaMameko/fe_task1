@@ -1,0 +1,120 @@
+.footer {
+  display: grid;
+  grid-template-columns: 447px 318px 460px;
+  grid-template-rows: 185px;
+}
+.footer-menu {
+  list-style: none;
+  display: flex;
+  flex: 1 0 0;
+  padding: 0;
+}
+.footer-menu-item {
+  margin-top: 31px;
+}
+.footer-menu-item__icon_facebook {
+  background-image: url("../images/Facebook-color.svg");
+  height: 24.56px;
+  width: 22.67px;
+}
+.footer-menu-item__icon_twitter {
+  background-image: url("../images/Twitter-color.svg");
+  height: 21.72px;
+  width: 25.5px;
+}
+.footer-menu-item__icon_google {
+  background-image: url("../images/GooglePlus-color (1).svg");
+  height: 24.18px;
+  width: 38px;
+}
+.footer-menu-item__icon_facebook:hover {
+  background-image: url("../images/Facebook_hover-color.svg");
+  height: 27px;
+  width: 25px;
+}
+.footer-menu-item__icon_twitter:hover {
+  background-image: url("../images/Twitter_hover-color.svg");
+  height: 23px;
+  width: 28px;
+}
+.footer-menu-item__icon_google:hover {
+  background-image: url("../images/GooglePlus-color.svg");
+  height: 27px;
+  width: 42px;
+}
+.footer-menu-item:first-of-type {
+  margin-right: 29px;
+}
+.footer-menu-item:last-of-type {
+  margin-left: 31px;
+}
+.footer-form {
+  grid-column: 1;
+  width: 333px;
+  height: 120px;
+  margin: 32px 125px 0 114px;
+}
+.footer-form__input {
+  border: none;
+  background-color: inherit;
+  outline: none;
+  margin: 32px 0 17px 0;
+}
+.footer-form__input::placeholder {
+  height: 20px;
+  width: 45.81px;
+  color: #2B292D;
+  font-family: "Proxima Nova Regular";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.footer-form__button {
+  border: none;
+  background-color: inherit;
+  width: 24px;
+  height: 17px;
+  background-image: url("../images/arrow-right.svg");
+  align-self: flex-end;
+  margin-bottom: 15px;
+}
+.footer-form-wrapper {
+  width: 321px;
+  border-bottom: 2px solid #2B292D;
+  display: flex;
+  flex: 1 0 0;
+  justify-content: space-between;
+}
+.footer-icons {
+  grid-column: 2;
+  width: 443px;
+  height: 120px;
+  margin: 32px 0 0 125px;
+}
+.footer-info {
+  grid-column: 3;
+  width: 353px;
+  height: 120px;
+  margin: 32px 0 0 119px;
+}
+.footer-info__text {
+  height: 100.3px;
+  width: 353px;
+  color: #837F89;
+  font-family: "Proxima Nova Regular";
+  font-size: 12px;
+  line-height: 20px;
+  text-align: justify;
+}
+.footer__header {
+  height: 17px;
+  width: 284.22px;
+  color: #837F89;
+  font-family: "Proxima Nova Regular";
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.88px;
+  line-height: 17px;
+}
+
+/*# sourceMappingURL=footer.css.map */
