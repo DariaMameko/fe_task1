@@ -43,17 +43,19 @@
         </a>
       </li>
     </ul>
-    <ul class="header-menu menu_row">
-      <li class="header-menu-item menu_row__item">
-        <a class="header-menu-item__link menu_row__item_link link" href="#">Про Букмоль</a>
-      </li>
-      <li class="header-menu-item menu_row__item">
-        <a class="header-menu-item__link menu_row__item_link link" href="#">Співпраця</a>
-      </li>
-      <li class="header-menu-item menu_row__item">
-        <a class="header-menu-item__link menu_row__item_link link" href="#">Підтримка</a>
-      </li>
-    </ul>
+    <div class="header-menu-wrapper">
+      <ul class="header-menu menu_row">
+        <li class="header-menu-item menu_row__item">
+          <a class="header-menu-item__link menu_row__item_link link" href="#">Про Букмоль</a>
+        </li>
+        <li class="header-menu-item menu_row__item">
+          <a class="header-menu-item__link menu_row__item_link link" href="#">Співпраця</a>
+        </li>
+        <li class="header-menu-item menu_row__item">
+          <a class="header-menu-item__link menu_row__item_link link" href="#">Підтримка</a>
+        </li>
+      </ul>
+    </div>
     <div class="header-images">
       <div class="header-images__search"></div>
       <div class="header-images__note"></div>
@@ -120,20 +122,22 @@
         </ul>
         <div class="main-content-row row_first">
           <div class="main-content-row__image row_first__image"></div>
-          <h4 class="main-content-row__header row_first__header">ОГЛЯДИ</h4>
-          <div class="main-content-row-text-block row_first-text-block">
-            <div class="main-content-row-info-date images">
-              <div class="main-content-row-calendar__button images-calendar__button"></div>
-              <p class="images-calendar__date">Сьогодні</p>
-              <div class="main-content-row-calendar__date images-looks__button"></div>
-              <p class="images-looks__count">32</p>
-            </div>
-            <h2 class="main-content-row-text-block__head main-image__text main-content_red_line">
-              Шість пригодницьких історій <br> для літнього читання
-            </h2>
-            <div class="main-content-row-read images-read">
-              <div class="images-read__button">Читати</div>
-              <div class="row_first__note images-read__note">
+          <div class="row_first__content">
+            <h4 class="main-content-row__header row_first__header">ОГЛЯДИ</h4>
+            <div class="main-content-row-text-block row_first-text-block">
+              <div class="main-content-row-info-date images">
+                <div class="main-content-row-calendar__button images-calendar__button"></div>
+                <p class="images-calendar__date">Сьогодні</p>
+                <div class="main-content-row-calendar__date images-looks__button"></div>
+                <p class="images-looks__count">32</p>
+              </div>
+              <h2 class="main-content-row-text-block__head main-image__text main-content_red_line">
+                Шість пригодницьких історій <br> для літнього читання
+              </h2>
+              <div class="main-content-row-read images-read">
+                <div class="images-read__button">Читати</div>
+                <div class="row_first__note images-read__note"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -147,7 +151,7 @@
               <div class="main-content-row-calendar__date images-looks__button"></div>
               <p class="images-looks__count">980</p>
             </div>
-            <h3 class="card__text">Найкращі дитячі ілюстратори незалежної України</h3>
+            <h3 class="card__text">Найкращі дитячі ілюстратори <br> незалежної України</h3>
             <div class="main-content-row-read__note images-read__note"></div>
           </div>
           <div class="card">
@@ -179,83 +183,88 @@
         </div>
         <div class="main-content-row row_third">
           <h4 class="main-content-row__header row_third__header">ПОРАДИ</h4>
-          <div class="main-content-row__image row_third__image"></div>
-          <div class="main-content-row-text-block row_third-text-block">
-            <div class="main-content-row-info-date images row_third__date">
-              <div class="main-content-row-calendar__button images-calendar__button"></div>
-              <p class="images-calendar__date">28 Вересня</p>
-              <div class="main-content-row-calendar__date images-looks__button"></div>
-              <p class="images-looks__count">2045</p>
-            </div>
-            <h2 class="main-content-row-text-block__head main-image__text row_third__head red-third__line">
-                &#171Любий щоденнику&#8230&#187: ваш <br> &#171настільний&#187 психоаналітик
-            </h2>
-            <div class="main-content-row-read images-read">
-              <div class="images-read__button">Читати</div>
-              <div class="row_third__note images-read__note"></div>
+          <div class="main-content-row__image row_third__image">
+            <div class="main-content-row-text-block row_third-text-block">
+              <div class="main-content-row-info-date images row_third__date">
+                <div class="main-content-row-calendar__button images-calendar__button"></div>
+                <p class="images-calendar__date">28 Вересня</p>
+                <div class="main-content-row-calendar__date images-looks__button"></div>
+                <p class="images-looks__count">2045</p>
+              </div>
+              <h2 class="main-content-row-text-block__head main-image__text row_third__head red-third__line">
+                  &#171Любий щоденнику&#8230&#187: ваш <br> &#171настільний&#187 психоаналітик
+              </h2>
+              <div class="main-content-row-read images-read">
+                <div class="images-read__button">Читати</div>
+                <div class="row_third__note images-read__note"></div>
+              </div>
             </div>
           </div>
         </div>
         <div class="main-content-row main-content-fourth-card row_fourth">
           <h4 class="card__header_main">TEEN REVIEW</h4>
-          <div class="card row_fourth-card">
-            <h4 class="main-content-row__header card__header">ОГЛЯДИ</h4>
-            <img class="card__image" src="images/card4.jpg">
-            <div class="card-buttons images">
-              <div class="main-content-row-calendar__button images-calendar__button"></div>
-              <p class="images-calendar__date">28 Вересня, 2017</p>
-              <div class="main-content-row-calendar__date images-looks__button"></div>
-              <p class="images-looks__count">2045</p>
+          <div class="row_fourth_wrapper_content">
+            <div class="card row_fourth-card">
+              <h4 class="main-content-row__header card__header">ОГЛЯДИ</h4>
+              <img class="card__image" src="images/card4.jpg">
+              <div class="card-buttons images">
+                <div class="main-content-row-calendar__button images-calendar__button"></div>
+                <p class="images-calendar__date">28 Вересня, 2017</p>
+                <div class="main-content-row-calendar__date images-looks__button"></div>
+                <p class="images-looks__count">2045</p>
+              </div>
+              <h3 class="card__text">
+                Поміж сірих сутінків Ріти Шупітс: <br>на противагу зброї
+              </h3>
+              <div class="row_fourth__note images-read__note"></div>
             </div>
-            <h3 class="card__text">
-              Поміж сірих сутінків Ріти Шупітс: <br>на противагу зброї
-            </h3>
-            <div class="row_fourth__note images-read__note"></div>
-          </div>
-          <div class="card row_fourth-card">
-            <h4 class="main-content-row__header card__header">НОВИНИ</h4>
-            <img class="card__image" src="images/card5.jpg">
-            <div class="card-buttons images">
-              <div class="main-content-row-calendar__button images-calendar__button"></div>
-              <p class="images-calendar__date">8 Листопада, 2017</p>
-              <div class="main-content-row-calendar__date images-looks__button"></div>
-              <p class="images-looks__count">3045</p>
+            <div class="card row_fourth-card">
+              <h4 class="main-content-row__header card__header">НОВИНИ</h4>
+              <img class="card__image" src="images/card5.jpg">
+              <div class="card-buttons images">
+                <div class="main-content-row-calendar__button images-calendar__button"></div>
+                <p class="images-calendar__date">8 Листопада, 2017</p>
+                <div class="main-content-row-calendar__date images-looks__button"></div>
+                <p class="images-looks__count">3045</p>
+              </div>
+              <h3 class="card__text">
+                У столиці запустили соціальний проект <br>&#171Київ читає&#184
+              </h3>
+              <div class="row_fourth__note images-read__note"></div>
             </div>
-            <h3 class="card__text">
-              У столиці запустили соціальний проект <br>&#171Київ читає&#184
-            </h3>
-            <div class="row_fourth__note images-read__note"></div>
-          </div>
-          <div class="card row_fourth-card">
-            <h4 class="main-content-row__header card__header">ФІЛЬМИ</h4>
-            <img class="card__image" src="images/card6.jpg">
-            <div class="card-buttons images">
-              <div class="main-content-row-calendar__button images-calendar__button"></div>
-              <p class="images-calendar__date">28 Вересня, 2017</p>
-              <div class="main-content-row-calendar__date images-looks__button"></div>
-              <p class="images-looks__count">6345</p>
+            <div class="card row_fourth-card">
+              <h4 class="main-content-row__header card__header">ФІЛЬМИ</h4>
+              <img class="card__image" src="images/card6.jpg">
+              <div class="card-buttons images">
+                <div class="main-content-row-calendar__button images-calendar__button"></div>
+                <p class="images-calendar__date">28 Вересня, 2017</p>
+                <div class="main-content-row-calendar__date images-looks__button"></div>
+                <p class="images-looks__count">6345</p>
+              </div>
+              <h3 class="card__text">
+                12 фільмів для дітей, знятих за <br>мотивами книжок
+              </h3>
+              <div class="row_fourth__note images-read__note"></div>
             </div>
-            <h3 class="card__text">
-              12 фільмів для дітей, знятих за <br>мотивами книжок
-            </h3>
-            <div class="row_fourth__note images-read__note"></div>
           </div>
         </div>
-        <h4 class="main-content-row__header row_fifth__header">АВТОРСЬКА КОЛОНКА</h4>
         <div class="main-content-row row_fifth">
-          <div class="main-content-row-text-block row_fifth-text-block">
-            <div class="main-content-row-info-date images">
-              <div class="main-content-row-calendar__button images-calendar__button"></div>
-              <p class="images-calendar__date">Сьогодні</p>
-              <div class="main-content-row-calendar__date images-looks__button"></div>
-              <p class="images-looks__count">32</p>
-            </div>
-            <h2 class="main-content-row-text-block__head main-image__text row_fifth__head red-fifth__line">
-              Бути собою разом із Туве Янсон: <br> 5 диваків Долини мумі-тролів
-            </h2>
-            <div class="main-content-row-read images-read">
-              <div class="images-read__button">Читати</div>
-              <div class="row_fifth__note images-read__note"></div>
+          <div class="row_fifth_content_wrapper">
+            <h4 class="main-content-row__header row_fifth__header">АВТОРСЬКА КОЛОНКА</h4>
+            <div class="main-content-row-text-block row_fifth-text-block">
+              <div class="main-content-row-info-date images">
+                <div class="main-content-row-calendar__button images-calendar__button"></div>
+                <p class="images-calendar__date">Сьогодні</p>
+                <div class="main-content-row-calendar__date images-looks__button"></div>
+                <p class="images-looks__count">32</p>
+              </div>
+              <h2 class="main-content-row-text-block__head main-image__text row_fifth__head red-fifth__line">
+                Бути собою разом із Туве Янсон: <br> 5 диваків Долини мумі-тролів
+              </h2>
+              <div class="main-content-row-read images-read">
+                <div class="images-read__button">Читати</div>
+                <div class="row_fifth__note images-read__note"></div>
+              </div>
             </div>
           </div>
           <div class="main-content-row__image row_fifth__image"></div>

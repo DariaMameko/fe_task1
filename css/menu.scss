@@ -2,25 +2,23 @@
 
 .menu-wrapper {
   width: 54px;
-  height: 3480px;
+  height: 3300px;
   border-right: 2px solid #ebecf0;
   box-sizing: border-box;
 
   &_red {
     background-color: $main_color_red;
     border-right: 2px solid #d44242;
-    margin-top: 2px;
   }
 }
 
 .menu {
-  display: grid;
-  justify-content: center;
-  align-items: flex-end;
-  grid-template-rows: 232px repeat(7, 48px);
+  display: flex;
+  flex-direction: column;
   position: absolute;
   list-style:none;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   width: 523px;
   background-color: #fff;
@@ -68,6 +66,7 @@
     font-size: 18px;	
     font-weight: 600;	
     line-height: 22px;
+    margin-left: 170px;
 
     &_link_red {
       color: #ffffff;
@@ -76,6 +75,10 @@
 
   &-item:first-of-type {
     margin-top: 210px;
+  }
+
+  &-item:not(:first-of-type) {
+    margin-top: 24px;
   }
 
   &-item:first-of-type::before {
@@ -92,6 +95,7 @@
   &-item__red:first-of-type::before {
     background-color: #fff;
   }
+
 }
 
 .menu-ticker:checked ~ .menu {
@@ -107,4 +111,3 @@
 .menu-ticker:checked ~ .menu-button_red {
   background-image: url("../images/x\ \(1\).svg");
 }
-

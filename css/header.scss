@@ -1,10 +1,20 @@
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Regular.woff') format('woff'),
+  url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @import "variables";
 
 .header {
   &-line_direction_right {
     width: 140px;
     height: 50px;
-    display: grid;
+    display: flex;
     align-items: center;
     border-right: 2px solid #ebecf0;
     background-color: #ffffff;
@@ -18,7 +28,6 @@
   }
 
   &-images {
-    grid-column: 4;
     display: flex;
     flex: 1 0 0;
     width: 92px;
@@ -46,6 +55,21 @@
 
   &-menu {
     list-style: none;
+    color: #2B292D;	
+    font-family: "Proxima Nova Regular";	
+    font-size: 14px;	
+    font-weight: 600;	
+    letter-spacing: 0.6px;	
+    line-height: 17px;
+
+    &-wrapper {
+      width: 1142px;
+      height: 50px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+    }
   }
 
   &-menu__link {
@@ -143,4 +167,32 @@
   }
 }
 
+.red-third__line {
+  position: relative;
+}
 
+.red-third__line::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 7px;
+  left: -60px;
+  width: 50px;
+  height: 4px;
+  background-color: #f94f4c;
+}
+
+.red-fifth__line {
+  position: relative;
+}
+
+.red-fifth__line::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 7px;
+  right: -15px;
+  width: 50px;
+  height: 4px;
+  background-color: #f94f4c;
+}

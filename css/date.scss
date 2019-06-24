@@ -3,16 +3,13 @@
 .images {
   width: 180px;
   height: 20px;
-  display: grid;
-  grid-template-columns: 18px 112px 23px 22px;
-  grid-template-rows: 20px;
+  display: flex;
   align-items: center;
 
   &-calendar__button {
     margin: 0;
     width: 18px;
     height: 20px;
-    grid-column: 1;
   }
 
   &-calendar__date {
@@ -23,14 +20,12 @@
     font-size: 12px;	
     letter-spacing: 0.17px;	
     line-height: 15px;
-    grid-column: 2;
   }
 
   &-looks__button {
     margin: 0;
     height: 18px;
     width: 23px;
-    grid-column: 3;
   }
 
   &-looks__count {
@@ -41,15 +36,17 @@
     font-size: 12px;	
     letter-spacing: 0.17px;	
     line-height: 15px;
-    grid-column: 4;
   }
 
   &-read {
+    display: flex;
+    margin-top: 33px;
 
     &__button {
       width: 83px;
       height: 29px;
       grid-column: 1;
+      -ms-grid-column: 1;
       border-radius: 100px;	
       background-color: $main_color;
       color: $main_title;	
@@ -58,8 +55,8 @@
       font-weight: 600;	
       letter-spacing: 0.6px;	
       line-height: 17px;
-      margin: 0;
-      display: grid;
+      margin: 0 14px 0 0;
+      display: flex;
       align-items: center;
       justify-content: center;
     }

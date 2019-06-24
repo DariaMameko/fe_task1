@@ -1,0 +1,126 @@
+@charset "UTF-8";
+.header-line_direction_right {
+  width: 140px;
+  height: 50px;
+  display: grid;
+  align-items: center;
+  border-right: 2px solid #ebecf0;
+  background-color: #ffffff;
+}
+.header-logo {
+  grid-column: 1;
+  height: 19px;
+  width: 104px;
+  background-image: url(../images/bokmål_logo.svg);
+  margin-left: 19px;
+}
+.header-images {
+  grid-column: 4;
+  display: flex;
+  flex: 1 0 0;
+  width: 92px;
+  height: 50px;
+  border-left: 2px solid #ebecf0;
+}
+.header-images__search {
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/search.svg");
+  margin: 15px 20px 15px 15px;
+}
+.header-images__search:hover {
+  background-image: url("../images/search-hover.svg");
+}
+.header-images__note {
+  width: 16px;
+  height: 20px;
+  background-image: url("../images/bookmark.svg");
+  margin: 16px 19px 14px 0;
+}
+.header-menu {
+  list-style: none;
+}
+.header-menu__link {
+  color: #2B292D;
+  text-decoration: none;
+}
+.header-ticker {
+  display: none;
+}
+.header-menu_dropdown {
+  display: block;
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  box-sizing: border-box;
+  width: 200px;
+  top: -200px;
+  left: 0;
+  transition: top 0.2s;
+  z-index: 9999;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  flex: 1 0 0;
+  justify-content: center;
+  width: 1366px;
+  background-color: #ffffff;
+}
+.header-menu_dropdown__link {
+  color: #2B292D;
+  text-decoration: none;
+}
+.header-menu_dropdown__link_red {
+  color: #f94f4c;
+}
+.header-menu_dropdown__link_yellow {
+  color: #FFC830;
+}
+.header-menu_dropdown-item {
+  height: 61px;
+  font-size: 18px;
+  line-height: 22px;
+  width: 208px;
+  margin-top: 39px;
+}
+.header-menu_dropdown-item:first-of-type::after {
+  content: "";
+  position: relative;
+  left: 59px;
+  display: inline-block;
+  width: 2px;
+  height: 12px;
+  background-color: #c9c8ca;
+}
+.header-menu_dropdown-item:last-of-type::before {
+  content: "";
+  position: relative;
+  right: 59px;
+  display: inline-block;
+  width: 2px;
+  height: 12px;
+  background-color: #c9c8ca;
+}
+.header-menu_dropdown-item:first-of-type {
+  color: #FFC830;
+}
+.header-button {
+  color: #000;
+  position: absolute;
+  cursor: pointer;
+  top: -4px;
+  left: 137px;
+  transition: left 0.23s;
+  z-index: 3;
+  width: 25px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.header-ticker:checked ~ .header-button {
+  left: 137px;
+}
+.header-ticker:checked ~ .header-menu_dropdown {
+  top: 53px;
+}
+
+/*# sourceMappingURL=heaader.css.map */

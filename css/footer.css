@@ -1,7 +1,10 @@
 .footer {
   display: grid;
+  display: -ms-grid;
   grid-template-columns: 447px 318px 460px;
+  -ms-grid-columns: 447px 318px 460px;
   grid-template-rows: 185px;
+  -ms-grid-rows: 185px;
 }
 .footer-menu {
   list-style: none;
@@ -50,6 +53,7 @@
 }
 .footer-form {
   grid-column: 1;
+  -ms-grid-column: 1;
   width: 333px;
   height: 120px;
   margin: 32px 125px 0 114px;
@@ -61,6 +65,15 @@
   margin: 32px 0 17px 0;
 }
 .footer-form__input::placeholder {
+  height: 20px;
+  width: 45.81px;
+  color: #2B292D;
+  font-family: "Proxima Nova Regular";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.footer-form__input:-ms-input-placeholder {
   height: 20px;
   width: 45.81px;
   color: #2B292D;
@@ -87,12 +100,14 @@
 }
 .footer-icons {
   grid-column: 2;
+  -ms-grid-column: 2;
   width: 443px;
   height: 120px;
   margin: 32px 0 0 125px;
 }
 .footer-info {
   grid-column: 3;
+  -ms-grid-column: 3;
   width: 353px;
   height: 120px;
   margin: 32px 0 0 119px;
